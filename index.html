@@ -4,21 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Karthik</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-      <a href="#" class="logo">KARTHIK</a>
-      <ul class="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
+<nav>
+    <ul class="navbar">
+        <li>
+            <a href="index.html">
+                <img src="files/karthik.jpg" class="nav-logo">
+            </a>
+        </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Projects</a></li>
     </ul>
     <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
+</nav>
+<p id="disclaimer">
+    My website is in development stage, you can access the content soon.
+</p>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://formspree.io/f/mvgpwolv" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
     <script src="script.js"></script>
 </body>

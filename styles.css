@@ -1,38 +1,102 @@
-header{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  padding: 28px 12%;
-  transition: all .50s ease;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.navbar {
-  display: flex;
+/* Basic reset and styling */
+body, ul, li {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.navbar a {
-  padding: 5px 0;
-  margin: 0px 30px;
-  transition: all .50s ease;
+nav {
+  background-color: #333; /* Dark background color for the nav */
+  padding: 10px;
 }
 
-.navbar a:hover{
-  color: aquamarine;
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* White text color */
+  font-size: 16px;
+}
+
+.nav-logo {
+  height: 40px; /* Adjust height as needed */
+  width: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.5); /* Slight zoom effect on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin-bottom: 10px;
+  }
+
+  .nav-logo {
+      height: 30px; /* Smaller size for mobile */
+  }
+}
+
+/* Contact section styling */
+#contact {
+  margin: 50px 250px;
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#contact h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
 }
 
-#menu-icon{
-  display: none;
+#contact-form button:hover {
+  background-color: #555;
 }
+
