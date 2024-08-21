@@ -10,7 +10,7 @@ body, ul, li {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #333; /* Background color of the navbar */
+  background-color: #4f4d4d; /* Background color of the navbar */
 }
 nav a {
   text-decoration: none;
@@ -70,9 +70,12 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-#socials a:hover {
-  background-color: #7b7a7a; /* Background color on hover */
-  border-radius: 5px; /* Rounded corners on hover */
+
+
+#socials img {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
 }
 
 
