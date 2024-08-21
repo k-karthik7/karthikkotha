@@ -5,20 +5,13 @@ body, ul, li {
   list-style: none;
 }
 
-nav {
-  background-color: #333; /* Dark background color for the nav */
-  padding: 10px;
-}
-
-nav ul {
+#navbar {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333; /* Background color of the navbar */
 }
-
-nav li {
-  margin-right: 20px;
-}
-
 nav a {
   text-decoration: none;
   color: #fff; /* White text color */
@@ -35,6 +28,55 @@ nav a {
 .nav-logo:hover {
   transform: scale(1.5); /* Slight zoom effect on hover */
 }
+
+#nav-items {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+#nav-items li {
+  margin-left: 20px; /* Space between navbar items */
+}
+
+#nav-items a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+}
+
+#nav-items a:hover {
+  background-color: #555; /* Background color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+#socials {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+}
+
+#socials li {
+  margin-left: 30 px;
+}
+
+#socials a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#socials a:hover {
+  background-color: #7b7a7a; /* Background color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+
+
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
