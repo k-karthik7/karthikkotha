@@ -1,40 +1,45 @@
-/* Basic reset and styling */
-body, ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  background-color: rgba(244, 236, 227, 0.954);
+  font-size: 20px;
 }
 
-#navbar {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #4f4d4d; /* Background color of the navbar */
-}
-nav a {
-  text-decoration: none;
-  color: #fff; /* White text color */
-  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 .nav-logo {
   height: 40px; /* Adjust height as needed */
   width: auto;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .nav-logo:hover {
-  /* transform: scale(1.5); */
-  transform: scale(7) translate(2em, 2em);
+  transform: scale(1.5);
 }
 
 #nav-items {
   display: flex;
   list-style: none; /* Remove default list styling */
-  margin: 0;
+  margin: auto;
   padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 #nav-items li {
@@ -57,7 +62,8 @@ nav a {
   display: flex;
   list-style: none; /* Remove default list styling */
   margin: 0;
-  padding: 0;
+  padding-right: 30px;
+  justify-content: end;
 }
 
 #socials li {
@@ -67,7 +73,7 @@ nav a {
 #socials a {
   color: #fff; /* Text color */
   text-decoration: none; /* Remove underline from links */
-  padding: 8px;
+  padding: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -75,36 +81,28 @@ nav a {
   transform: scale3d(1.5, 1.5, 1.5);
 }
 
-
-
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  nav ul {
-      flex-direction: column;
-  }
-
-  nav li {
-      margin-bottom: 10px;
-  }
-
-  .nav-logo {
-      height: 30px; /* Smaller size for mobile */
-  }
-}
-
-/* Contact section styling */
-#contact {
-  margin: 50px 250px;
-  padding: 50px;
+section {
+  margin: 25px 100px;
+  padding: 15px;
   background-color: #f4f4f4;
   text-align: center;
   border-radius: 15px;
 }
 
-#contact h2 {
+/* .about p {
+  font-size: 25px;
+} */
+
+.typewrite-container {
+  height: 1.5em; /* Adjust this height based on your font size */
+  display: flex;
+  align-items: center; /* Vertically center the typewriting text */
+  justify-content: center;
+}
+
+.contact h2 {
   margin-bottom: 30px;
-  font-size: 2em;
+  font-size: 30px;
 }
 
 #contact-form {
@@ -140,5 +138,10 @@ nav a {
 
 #contact-form button:hover {
   background-color: #555;
+}
+
+#content-container {
+  padding: 20px;
+  margin-top: 20px;
 }
 
