@@ -89,9 +89,6 @@ section {
   border-radius: 15px;
 }
 
-/* .about p {
-  font-size: 25px;
-} */
 
 .typewrite-container {
   height: 1.5em; /* Adjust this height based on your font size */
@@ -99,6 +96,47 @@ section {
   align-items: center; /* Vertically center the typewriting text */
   justify-content: center;
 }
+
+#blog-previews {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 2 columns layout */
+  gap: 20px;
+}
+
+.blog-preview {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 70%;
+  height: 100%;
+}
+
+.blog-preview img {
+  max-width: 100%;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.blog-preview h4 {
+  margin: 10px 0 5px;
+}
+
+.blog-preview .details {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.blog-preview .details span {
+  display: block;
+  margin-top: 5px;
+}
+
 
 .contact h2 {
   margin-bottom: 30px;
