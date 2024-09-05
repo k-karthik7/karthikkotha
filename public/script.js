@@ -1,3 +1,11 @@
+menu = document.querySelector(".menu-icon");
+menu.onclick = function() {
+    navItems = document.querySelector(".nav-middle");
+    socials = document.querySelector(".nav-right");
+    navItems.classList.toggle("active");
+    socials.classList.toggle("active");
+}
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -107,6 +115,7 @@ document.getElementById('viewAllBlogsButton').addEventListener('click', function
     document.getElementById('contact-section').style.display = 'none';
     document.getElementById('blog-section').style.display = 'none';
     document.getElementById('skills-section').style.display = 'none';
+    document.getElementById('projects-section').style.display = 'none';
 
     fetch('blog-content.html')
         .then(response => response.text())
@@ -125,4 +134,5 @@ function closeBlog() {
     document.getElementById('contact-section').style.display = 'block';
     document.getElementById('blog-section').style.display = 'block';
     document.getElementById('skills-section').style.display = 'block';
+    document.getElementById('projects-section').style.display = 'block';
 }
