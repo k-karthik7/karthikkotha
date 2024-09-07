@@ -42,15 +42,17 @@ section h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .skills-content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 500px);
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
   margin-top: 10px;
+  width: 100%;
+  gap: 20px;
 }
 .skill {
   display: flex;
@@ -58,21 +60,19 @@ section h3 {
   align-items: center;
   justify-content: space-evenly;
   background-color: #f4ece3f3;
-  width: 80%;
-  margin-bottom: 10px;
+  width: auto;
   padding: 10px;
   border-radius: 15px;
 }
 
 .skill-title {
-  width: fit-content;
+  width: auto;
 }
 
 .skill-logos {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 
@@ -213,6 +213,7 @@ section h3 {
   .skills-content, .skill {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   
 }
