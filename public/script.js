@@ -71,6 +71,20 @@ let blogPreviews = [
         title: "Importance of having a portfolio website", 
         date: "August 30, 2024", 
         timeToRead: "5 min read",
+    },
+    { 
+        id: 2,
+        image: "image2.jpg",
+        title: "Git beyond push", 
+        date: "September 02, 2024", 
+        timeToRead: "5 min read",
+    },
+    { 
+        id: 3,
+        image: "image3.jpg",
+        title: "Telegram :: The Homeground of multiple scams", 
+        date: "September 09, 2024", 
+        timeToRead: "5 min read",
     }
     
 ];
@@ -80,7 +94,7 @@ function displayBlogPreviews() {
     const blogPreviewsContainer = document.getElementById('blog-previews');
     blogPreviewsContainer.innerHTML = ''; // Clear existing previews
 
-    blogPreviews.slice(-4).forEach(preview => { // Get the last 3 previews
+    blogPreviews.slice(-4).reverse().forEach(preview => { // Get the last 3 previews
         const previewDiv = document.createElement('div');
         previewDiv.className = 'blog-preview';
         previewDiv.innerHTML = `
