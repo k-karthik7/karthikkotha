@@ -85,6 +85,22 @@ let blogPreviews = [
         title: "Telegram :: The Homeground of multiple scams", 
         date: "September 09, 2024", 
         timeToRead: "5 min read",
+        article: "telegram-scam.html",
+    },
+    { 
+        id: 2,
+        image: "image2.jpg",
+        title: "Git beyond push", 
+        date: "September 02, 2024", 
+        timeToRead: "5 min read",
+    },
+    { 
+        id: 3,
+        image: "image3.jpg",
+        title: "Telegram :: The Homeground of multiple scams", 
+        date: "September 09, 2024", 
+        timeToRead: "5 min read",
+        article: "telegram-scam.html",
     }
     
 ];
@@ -99,10 +115,14 @@ function displayBlogPreviews() {
         previewDiv.className = 'blog-preview';
         previewDiv.innerHTML = `
             <img src="articles/${preview.id}/${preview.image}" alt="${preview.title}">
-            <h4>${preview.title}</h4>
+            <div class="preview-story">
+            <div class="blog-title">
+            <h4><a href="articles/${preview.id}/${preview.article}" target="_blank">${preview.title}</a></h4>
+            </div>
             <div class="details">
                 <span>${preview.date}</span>
                 <span>${preview.timeToRead}</span>
+            </div>
             </div>
         `;
         blogPreviewsContainer.appendChild(previewDiv);
@@ -118,35 +138,30 @@ function addBlogPreview(id, image, title, date, timeToRead) {
 // Initial display of the previews
 displayBlogPreviews();
 
-// Example usage: Adding a new blog preview
-// addBlogPreview(5, "image5.jpg", "Blog Post 5", "August 30, 2024", "7 min read");
 
 });
 
-document.getElementById('viewAllBlogsButton').addEventListener('click', function() {
-    // Hide other sections
-    document.getElementById('about-section').style.display = 'none';
-    document.getElementById('contact-section').style.display = 'none';
-    document.getElementById('blog-section').style.display = 'none';
-    document.getElementById('skills-section').style.display = 'none';
-    document.getElementById('projects-section').style.display = 'none';
+// document.getElementById('viewAllBlogsButton').addEventListener('click', function() {
+//     document.getElementById('about-section').style.display = 'none';
+//     document.getElementById('contact-section').style.display = 'none';
+//     document.getElementById('blog-section').style.display = 'none';
+//     document.getElementById('skills-section').style.display = 'none';
+//     document.getElementById('projects-section').style.display = 'none';
 
-    fetch('blog-content.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('blog-list').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading the blog content:', error));
-});
+//     fetch('blog-content.html')
+//         .then(response => response.text())
+//         .then(data => {
+//             document.getElementById('blog-list').innerHTML = data;
+//         })
+//         .catch(error => console.error('Error loading the blog content:', error));
+// });
 
-function closeBlog() {
-    // Clear the blog content
-    document.getElementById('blog-list').innerHTML = '';
+// function closeBlog() {
+//     document.getElementById('blog-list').innerHTML = '';
 
-    // Show the main sections
-    document.getElementById('about-section').style.display = 'block';
-    document.getElementById('contact-section').style.display = 'block';
-    document.getElementById('blog-section').style.display = 'block';
-    document.getElementById('skills-section').style.display = 'block';
-    document.getElementById('projects-section').style.display = 'block';
-}
+//     document.getElementById('about-section').style.display = 'block';
+//     document.getElementById('contact-section').style.display = 'block';
+//     document.getElementById('blog-section').style.display = 'block';
+//     document.getElementById('skills-section').style.display = 'block';
+//     document.getElementById('projects-section').style.display = 'block';
+// }

@@ -1,3 +1,7 @@
 content.txt
 /node_modules
 /practice
+/blog
+/shared-assets
+firebase.json
+.firebaserc

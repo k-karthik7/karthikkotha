@@ -1,5 +1,19 @@
 {
   "projects": {
     "default": "portfolio-4b8a5"
-  }
+  },
+  "targets": {
+    "portfolio-4b8a5": {
+      "hosting": {
+        "blog": [
+          "karthikblog"
+        ],
+        "portfolio": [
+          "portfolio-4b8a5"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }

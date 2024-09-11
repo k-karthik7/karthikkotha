@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4ece3f3;
+    display: flex;
+    justify-content: center;
+}
+
+.article-content {
+    width: 800px;
+    padding: 15px;
+}
