@@ -29,6 +29,21 @@
           "destination": "/shared-assets/**"
         }
       ]
+    },
+    {
+      "target": "shared-assets",
+      "public": "shared-assets",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "/shared-assets/**",
+          "destination": "/shared-assets/**"
+        }
+      ]
     }
   ]
 }
