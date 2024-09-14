@@ -71,4 +71,21 @@ section {
     display: block;
     margin-top: 5px;
   }
+
+  @media screen and (max-width: 950px) {
+    .blog-previews {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    body {
+      padding-top: 30px;
+    }
+    section {
+      margin: 10px 25px;
+    }
+    
+  }
   
