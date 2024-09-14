@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <img src="articles/${preview.id}/${preview.image}" alt="${preview.title}">
                 <div class="preview-story">
                 <div class="blog-title">
-                <h4><a href="articles/${preview.id}/${preview.article}" target="_blank">${preview.title}</a></h4>
+                <h4><a href="https://blog.karthikkotha.in/articles/${preview.id}/${preview.article}" target="_blank">${preview.title}</a></h4>
                 </div>
                 <div class="details">
                     <span>${preview.date}</span>
